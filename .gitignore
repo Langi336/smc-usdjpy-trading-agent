@@ -1,0 +1,51 @@
+# .gitignore
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+logs/
+*.log
+
+# Data files
+data/raw/
+data/processed/
+data/features/
+
+# Model files (large files)
+models/trained/
+models/checkpoints/
+*.pkl
+*.h5
+*.pt
+*.pth
+
+# Config files with secrets
+config/config.yaml
+.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Charts generated
+chart_*.png
+
+# Jupyter notebooks
+*.ipynb_checkpoints/
+
+# Test outputs
+tests/__pycache__/

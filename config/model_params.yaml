@@ -1,0 +1,46 @@
+# config/model_params.yaml
+tft:
+  input_dim: 128
+  hidden_dim: 256
+  num_heads: 8
+  num_layers: 4
+  output_dim: 1
+  seq_len: 96
+  pred_len: 24
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  epochs: 100
+  batch_size: 64
+
+bilstm:
+  input_dim: 128
+  hidden_dim: 256
+  num_layers: 3
+  seq_len: 96
+  pred_len: 24
+  learning_rate: 0.0001
+  dropout: 0.2
+
+cnn_vit:
+  input_dim: 128
+  seq_len: 96
+  pred_len: 24
+  image_size: 96
+  patch_size: 8
+  dim: 256
+  depth: 6
+  heads: 8
+  mlp_dim: 512
+  learning_rate: 0.0001
+
+rl:
+  agent_type: "ppo"
+  total_timesteps: 100000
+  learning_rate: 0.0003
+  n_steps: 2048
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.01

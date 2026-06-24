@@ -1,0 +1,57 @@
+smc_usdjpy_agent/
+├── src/
+│   ├── data_ingestion/
+│   │   ├── __init__.py
+│   │   ├── feed_manager.py
+│   │   ├── mt5_connector.py
+│   │   └── news_fetcher.py
+│   ├── feature_engineering/
+│   │   ├── __init__.py
+│   │   ├── smc_features.py
+│   │   ├── technical_features.py
+│   │   └── macro_features.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── tft_model.py
+│   │   ├── bilstm_model.py
+│   │   ├── cnn_vit_model.py
+│   │   └── rl_agent.py
+│   ├── smc_engine/
+│   │   ├── __init__.py
+│   │   ├── market_structure.py
+│   │   ├── order_blocks.py
+│   │   ├── fvg_detector.py
+│   │   └── liquidity_analyzer.py
+│   ├── signal_generation/
+│   │   ├── __init__.py
+│   │   ├── signal_generator.py
+│   │   ├── risk_manager.py
+│   │   └── confidence_gate.py
+│   ├── chart_generation/
+│   │   ├── __init__.py
+│   │   └── chart_composer.py
+│   ├── telegram_agent/
+│   │   ├── __init__.py
+│   │   ├── agent_brain.py
+│   │   ├── bot_handler.py
+│   │   └── message_formatter.py
+│   └── execution/
+│       ├── __init__.py
+│       ├── execution_bridge.py
+│       └── model_retrainer.py
+├── config/
+│   ├── config.yaml
+│   └── model_params.yaml
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── features/
+├── models/
+│   ├── trained/
+│   └── checkpoints/
+├── logs/
+├── tests/
+├── requirements.txt
+├── docker-compose.yml
+├── Dockerfile
+└── main.py

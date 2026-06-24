@@ -1,0 +1,30 @@
+# config/config.yaml
+symbol: "USD/JPY"
+
+# Multi-Timeframe Settings
+multi_timeframe:
+  # Higher Timeframes for Bias
+  htf_timeframes: ["1H", "2H"]
+  
+  # Lower Timeframes for Entries
+  ltf_timeframes: ["5M", "15M"]
+  
+  # Minimum confidence for a signal
+  min_confidence: 0.6
+  
+  # Minimum RR ratio
+  min_rr_ratio: 1.5
+
+# Other settings
+risk_management:
+  max_risk_per_trade: 0.02
+  max_daily_loss: 0.05
+
+telegram:
+  bot_token: "YOUR_BOT_TOKEN_HERE"
+  subscribers: [123456789]
+
+# Logging
+logging:
+  level: "INFO"
+  file: "logs/agent.log"
